@@ -74,34 +74,15 @@ Controls (Price, Promotions, Emails, SMS, Seasonality, Trend) adjust for confoun
 ## 📂 Project Structure
 
 MMM-Project/
-├── README.md # This file
-├── REPORT.md # Stakeholder-facing analysis
-├── requirements.txt # Environment dependencies
-├── MMM_end_to_end.ipynb # End-to-end notebook
-│
+├── README.md
+├── REPORT.md
+├── requirements.txt
+├── MMM_end_to_end.ipynb
 ├── data/
-│ └── weekly_data.csv # Input dataset
-│
+│   └── weekly_data.csv
 ├── artifacts/
-│ ├── enet_coefs.csv
-│ ├── predictions_test.csv
-│ ├── rf_importances.csv
-│ ├── rf_predictions_oof.csv
-│ ├── mediation_effects.csv
-│ ├── sensitivity_summary.csv
-│ ├── roas_table.csv
-│ ├── rolling_scores.csv
-│ ├── stage2_enet.pkl
-│ ├── rf_stage2.pkl
-│ └── figures/
-│ ├── pred_vs_actual.png
-│ ├── residuals_over_time.png
-│ ├── rf_top20_importances.png
-│ ├── price_sensitivity.png
-│ ├── promo_lift.png
-│ ├── roas_bars.png
-│ ├── rolling_performance.png
-│ └── causal_dag.png
+│   └── figures/
+└── src/
 
 
 ---
