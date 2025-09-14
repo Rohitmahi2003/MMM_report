@@ -11,7 +11,7 @@ The project is designed to be **causally aware, reproducible, and product-orient
 - Quantify the impact of media and control variables on Revenue.  
 - Capture **carryover (Adstock)** and **diminishing returns (Saturation)**.  
 - Respect causal structure: **Social → Google → Revenue** (mediated effect).  
-- Validate using **time-series CV** (no look-ahead).  
+- Validate using **time-series cross-validation** (no look-ahead).  
 - Provide **diagnostics, sensitivity tests, ROAS estimates, and stability checks**.  
 - Deliver **practical recommendations** for marketing/growth teams.  
 
@@ -74,9 +74,9 @@ Controls (Price, Promotions, Emails, SMS, Seasonality, Trend) adjust for confoun
 ## 📂 Project Structure
 
 MMM-Project/
-├── README.md # How to run (this file)
-├── REPORT.md # Analysis write-up (stakeholder-facing)
-├── requirements.txt # Environment (pinned versions)
+├── README.md # This file
+├── REPORT.md # Stakeholder-facing analysis
+├── requirements.txt # Environment dependencies
 ├── MMM_end_to_end.ipynb # End-to-end notebook
 │
 ├── data/
@@ -103,8 +103,6 @@ MMM-Project/
 │ ├── rolling_performance.png
 │ └── causal_dag.png
 
-yaml
-Copy code
 
 ---
 
@@ -115,60 +113,9 @@ Copy code
    ```python
    from google.colab import drive
    drive.mount('/content/drive')
-Copy repo into Drive.
+    ```
+2.Copy repo into Drive.
 
-Open MMM_end_to_end.ipynb.
+3.Open MMM_end_to_end.ipynb.
 
-Run all cells → outputs saved to /artifacts/.
-
-Option 2 — Local
-Clone repo.
-
-Install dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Put weekly_data.csv in /data/.
-
-Run MMM_end_to_end.ipynb.
-
-Outputs will be in /artifacts/.
-
-📊 Key Outputs
-Coefficients: enet_coefs.csv
-
-Predictions: predictions_test.csv
-
-Mediation effects: mediation_effects.csv
-
-Sensitivity analysis: sensitivity_summary.csv
-
-ROAS table: roas_table.csv
-
-Rolling scores: rolling_scores.csv
-
-Figures: prediction fit, residuals, importances, sensitivity, ROAS, rolling performance, DAG.
-
-💡 Insights & Recommendations
-Social impact: some channels have positive direct effects but negative indirect (via Google).
-
-Snapchat: negative both ways → candidate for budget reduction.
-
-Pricing: highly elastic; increases reduce revenue unless offset by promotions.
-
-Promotions: selective promos provide lift; avoid always-on.
-
-ROAS: use marginal ROAS for budget allocation.
-
-Stability: coefficients vary → suggests structural changes; RF/boosting as robustness checks.
-
-✅ Reproducibility
-Deterministic results (fixed seed).
-
-Dependencies pinned in requirements.txt.
-
-Notebook runs end-to-end.
-
-Artifacts saved in /artifacts/.
-
+4.Run all cells → outputs saved to /artifacts/.
