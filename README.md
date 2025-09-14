@@ -71,7 +71,6 @@ Controls (Price, Promotions, Emails, SMS, Seasonality, Trend) adjust for confoun
 
 ---
 
----
 
 # PROJECT FOLDER
 ``` 
