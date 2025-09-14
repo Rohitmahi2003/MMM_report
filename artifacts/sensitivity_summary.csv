@@ -1,0 +1,4 @@
+scenario,pct_change_revenue
+Price +10%,-0.15075980605417083
+Price -10%,0.15075980605417066
+Promotions ON vs OFF,-0.15970742800349264
