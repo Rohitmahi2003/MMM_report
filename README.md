@@ -70,7 +70,25 @@ Controls (Price, Promotions, Emails, SMS, Seasonality, Trend) adjust for confoun
 - Marginal ROAS from +5% spend scenarios.  
 
 ---
+## Key Figures
 
+*Model Fit*  
+![Predicted vs Actual Revenue](artifacts/figures/pred_vs_actual.png)
+
+*Stability (Rolling Windows)*  
+![Rolling Window Performance](artifacts/figures/rolling_performance.png)
+
+*Drivers (Non-linear Benchmark)*  
+![Random Forest Top Importances](artifacts/figures/rf_top20_importances.png)
+
+*Actionability (Marginal ROAS)*  
+![ROAS Bars](artifacts/figures/roas_bars.png)
+
+> Optional: If focusing on pricing/promotion, swap in these instead:  
+> ![Price Sensitivity](artifacts/figures/price_sensitivity.png)  
+> ![Promo Lift](artifacts/figures/promo_lift.png)
+
+---
 
 # PROJECT FOLDER
 ``` 
