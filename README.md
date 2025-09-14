@@ -73,6 +73,19 @@ Controls (Price, Promotions, Emails, SMS, Seasonality, Trend) adjust for confoun
 
 ---
 
+# PROJECT FOLDER
+``` 
+MMM-Project/
+├── README.md
+├── REPORT.md
+├── requirements.txt
+├── MMM_end_to_end.ipynb
+├── data/
+│   └── weekly_data.csv
+├── artifacts/
+│   └── figures/
+└── (any other files)
+```
 ## ▶️ How to Run
 
 ### Option 1 — Google Colab
