@@ -71,20 +71,6 @@ Controls (Price, Promotions, Emails, SMS, Seasonality, Trend) adjust for confoun
 
 ---
 
-## 📂 Project Structure
-
-MMM-Project/
-├── README.md
-├── REPORT.md
-├── requirements.txt
-├── MMM_end_to_end.ipynb
-├── data/
-│   └── weekly_data.csv
-├── artifacts/
-│   └── figures/
-└── src/
-
-
 ---
 
 ## ▶️ How to Run
